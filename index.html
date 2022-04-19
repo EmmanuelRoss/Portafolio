@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 </head>
-<body class="bg-light">
+<body class="bg-dark">
     <!--navbar start-->
-    <nav class="navbar navbar-light fixed-top bg-light shadow-sm">
+    <!--<nav class="navbar navbar-light fixed-top bg-light shadow-sm">
         <div class="container-lg">
           <a class="navbar-brand text-danger fw-bold fs-4" href="#">Mx</a>
           <div class="dropdown">
@@ -29,7 +29,38 @@
             </ul>
           </div>
         </div>
+    </nav>-->
+
+
+    <nav class="navbar navbar-light bg-light fixed-top navbar-expand-lg shadow-sm">
+        <div class="container-fluid">            
+            <a class="navbar-brand text-danger fw-bold fs-4" href="#">Mx</a>
+            <button class="navbar-toggler bg-danger px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Acerca de mi</a>
+                    </li>              
+                    <li class="nav-item">
+                        <a class="nav-link" href="#curses">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portafolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contáctame</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
     </nav>
+
+
     <!--navbar end-->
 
     <!--home section start-->
@@ -44,8 +75,8 @@
                     <div class="col-md-6 mt-5 mt-md-0 order-md-first">
                         <div class="home-text">
                             <p class="text-muted mb-1">Hola soy</p>
-                            <h1 class="text-danger text-uppercase fs-1 fw-bold">Emmanuel Rosales</h1>
-                            <h2 class="fs-4 text-muted">Desarrollador Web</h2>
+                            <h1 class="text-danger text-uppercase fs-1 fw-bold">Emmanuel Rosales Sánchez</h1>
+                            <h2 class="fs-4 text-muted">Ingeniero en Computación - Desarrollador Java Web Jr.</h2>
                             <p class="mt-4 text-muted">Como desarrollador java soy una persona que sabe trabajar en equipo y comprometida con
                             la innovación y el desarrollo de herramientas tecnológicas.</p>
                             <a href="#portafolio" class="btn btn-danger px-3 mt-3">Mi trabajo</a>
@@ -62,7 +93,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title text-center">
-                        <h2 class="fw-bold mb-5 text-secondary">Acerca de mi</h2>
+                        <h2 class="fw-bold mb-5 text-light">Acerca de mi</h2>
                     </div>
                 </div>
             </div>
@@ -80,7 +111,7 @@
                     <br>
                     <div class="row">
                         <div class="col-lg-12 d-flex align-items-center">
-                            <a href="#" class="btn px-3 btn-danger me-5">Descargar CV</a>
+                            <a href="./src/recursos/EmmanuelRosales_CV_actzdo.pdf" class="btn px-3 btn-danger me-5" target="_blank">Descargar CV</a>
                             <div class="social-links">
                                 <a href="https://www.linkedin.com/in/emmanuel-ross/" class="text-dark me-4"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="https://github.com/EmmanuelRoss" class="text-dark me-4"><i class="fab fa-github"></i></a>
@@ -208,22 +239,22 @@
                         <!--Inicio item html-->
                         <div class="contact-item d-flex mb-3">
                             <div class="text ms-3">
-                                <h3 class="fs-5 text-muted">Trabajo en Equipo</h3>
+                                <h3 class="fs-5 text-muted">* Trabajo en Equipo</h3>
                             </div>
                         </div><!--End item html-->
                         <div class="contact-item d-flex mb-3">
                             <div class="text ms-3">
-                                <h3 class="fs-5 text-muted">Metodología SCRUM</h3>
+                                <h3 class="fs-5 text-muted">* Metodología SCRUM</h3>
                             </div>
                         </div>
                         <div class="contact-item d-flex mb-3">
                             <div class="text ms-3">
-                                <h3 class="fs-5 text-muted">Persistencia</h3>
+                                <h3 class="fs-5 text-muted">* Persistencia</h3>
                             </div>
                         </div>
                         <div class="contact-item d-flex mb-3">
                             <div class="text ms-3">
-                                <h3 class="fs-5 text-muted">Compromiso</h3>
+                                <h3 class="fs-5 text-muted">* Autodidacta</h3>
                             </div>
                         </div>
                     </div>
@@ -234,12 +265,12 @@
     <!--about section end-->
 
     <!--service section start-->
-    <section class="services py-5" id="services">
+    <section class="curses py-5" id="curses">
         <div class="container-lg py-4">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title text-center">
-                        <h2 class="fw-bold mb-5">Cursos</h2>
+                        <h2 class="fw-bold mb-5 text-light">Cursos</h2>
                     </div>
                 </div>
             </div>
@@ -249,9 +280,31 @@
                         <div class="iconmy-3 text-danger fs-2">
                             <i class="fas fa-code"></i>
                         </div>
-                        <h3 class="fs-5 py-2">Web Devalopment</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit.</p>
+                        <h3 class="fs-5 py-2">Desarrollador Java Web Fullstack Jr.</h3>
+                        <p class="text-muted">Generation México</p>
+                        <p class="text-muted">enero 2022 - abril 2022</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                        <div class="iconmy-3 text-danger fs-2">
+                            <!--<i class="fas fa-code"></i>-->
+                            <i class="fab fa-free-code-camp"></i>
+                        </div>
+                        <h3 class="fs-5 py-2">JavaScript Algorithms and Data Structures</h3>
+                        <p class="text-muted">freeCodeCamp.com</p>
+                        <p class="text-muted">enero 2022 - abril 2022</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                        <div class="iconmy-3 text-danger fs-2">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3 class="fs-5 py-2">Github para Programadores.</h3>
+                        <br>
+                        <p class="text-muted">Linkedin</p>
+                        <p>marzo 2022</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4">
@@ -259,19 +312,31 @@
                         <div class="iconmy-3 text-danger fs-2">
                             <i class="fas fa-lightbulb"></i>
                         </div>
-                        <h3 class="fs-5 py-2">Creative Design</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit.</p>
+                        <h3 class="fs-5 py-2">Remote Work Profesional</h3>
+                        <br>
+                        <p class="text-muted">Taravy</p>
+                        <p>marzo 2022</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="service-item shadow-sm p-4 rounded bg-white">
                         <div class="iconmy-3 text-danger fs-2">
-                            <i class="fas fa-image"></i>
+                            <i class="fab fa-linkedin-in"></i>
                         </div>
-                        <h3 class="fs-5 py-2">Photoshop</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit.</p>
+                        <h3 class="fs-5 py-2">Scrum con un café.</h3>
+                        <br>
+                        <p class="text-muted">Linkedin</p>
+                        <p>marzo 2022</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                        <div class="iconmy-3 text-danger fs-2">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <h3 class="fs-5 py-2">Introducción al desarrollo web: HTML y CSS.</h3>                    
+                        <p class="text-muted">Google Activate</p>
+                        <p>marzo 2022</p>
                     </div>
                 </div>
             </div>
@@ -322,7 +387,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title text-center">
-                        <h2 class="fw-bold mb-5">Portafolio</h2>
+                        <h2 class="fw-bold mb-5 text-light">Portafolio</h2>
                     </div>
                 </div>
             </div>
@@ -338,9 +403,9 @@
                             <div class="portafolio-item carousel-item active bg-white shadow-sm rounded p-4 mb-6">
                                 <img src="./src/img/ginger_SS.png" alt="Screen Shot de página web Ginger" class="w-100 img-thumbnail">
                                 <h3 class="text-capitalize fs-5 my-2">Ginger</h3>
-                                <p class="mb-4"><a href="https://tutuwix.000webhostapp.com/index.html" class="text-danger text-decoration-none">Página Ginger</a></p>
+                                <p class="mb-4"><a href="https://tutuwix.000webhostapp.com/index.html" class="text-danger text-decoration-none" target="_blank">Página Ginger</a></p>
                                 <p class="text-muted mt">Este proyecto está desarrollado usando las tecnologías HTML5, CSS3 y JavaScript.</p>
-                                <!--<br><br>-->
+                                <br><br>
                             </div>
                     
                             <div class="portafolio-item carousel-item bg-white shadow-sm rounded p-4 mb-6">
@@ -348,13 +413,13 @@
                                 <h3 class="text-capitalize fs-5 my-2">Portafolio Bootstrap 5</h3>
                                 <p class="mb-4"><a href="#" class="text-danger text-decoration-none">Mi portafolio</a></p>
                                 <p class="text-muted mt">Este proyecto está desarrollado solamente con Bootstrap 5.1</p>
-                                <!--<br><br>-->
+                                <br><br>
                             </div>
                         
                             <div class="portafolio-item carousel-item bg-white shadow-sm rounded p-4 mb-6">
                                 <img src="./src/img/tutuWix_ss.png" alt="Screen Shot de página web Tutú" class="w-100 img-thumbnail">
                                 <h3 class="text-capitalize fs-5 my-2">Tutú Wix</h3>
-                                <p class="mb-4"><a href="https://wixtutu.herokuapp.com/index.html" class="text-danger text-decoration-none">Página Tutú Wix</a></p>
+                                <p class="mb-4"><a href="https://wixtutu.herokuapp.com/index.html" class="text-danger text-decoration-none" target="_blank">Página Tutú Wix</a></p>
                                 <p class="text-muted mt">Este proyecto está desarrollado usando las tecnologías HTML5, CSS3, Bootstrap y JavaScript para la parte de Frontend, y para el Backend con Java, Springboot y MySQL.</p>
                             </div>
                         </div>
@@ -397,18 +462,18 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title text-center">
-                        <h2 class="fw-bold mb-5">Contáctame</h2>
+                        <h2 class="fw-bold mb-5 text-light">Contáctame</h2>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-5">
+            <div class="row justify-content-center">
+                <div class="col-md-3">
                     <div class="contact-item d-flex mb-3">
                         <div class="icon fs-4 text-danger">
                             <i class="fab fa-linkedin-in"></i>
                         </div>
                         <div class="text ms-3">
-                            <h3 class="fs-5">Linkedin</h3>
+                            <h3 class="fs-5 text-muted">Linkedin</h3>
                             <p class="text-muted">https://www.linkedin.com/in/emmanuel-ross/</p>
                         </div>
                     </div>
@@ -417,7 +482,7 @@
                             <i class="fab fa-github"></i>
                         </div>
                         <div class="text ms-3">
-                            <h3 class="fs-5">Github</h3>
+                            <h3 class="fs-5 text-muted">Github</h3>
                             <p class="text-muted">https://github.com/EmmanuelRoss</p>
                         </div>
                     </div>
@@ -426,21 +491,21 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="text ms-3">
-                            <h3 class="fs-5">Email</h3>
+                            <h3 class="fs-5 text-muted">Correo electrónico</h3>
                             <p class="text-muted">emmanuelrosshz@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item d-flex mb-3">
                         <div class="icon fs-4 text-danger">
-                            <i class="fas fa-phone"></i>
+                            <i class="fab fa-whatsapp"></i>
                         </div>
                         <div class="text ms-3">
-                            <h3 class="fs-5">Teléfono</h3>
+                            <h3 class="fs-5 text-muted">Teléfono</h3>
                             <p class="text-muted">(+52) 55 3354 8994</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7">
+                <!--<div class="col-md-7">
                     <div class="contact-form">
                         <form action="">
                             <div class="row">
@@ -461,7 +526,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 mb-4">
-                                    <textarea rows="5" placeholder="Mensaje" class="form-control 
+                                    <textarea type="text" rows="5" placeholder="Mensaje" class="form-control 
                                     form-control-lg fs-6 border-0 shadow-sm">
                                     </textarea>
                                 </div>
@@ -473,7 +538,7 @@
                             </div>
                         </form>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>
